@@ -15,7 +15,7 @@
   export let heading = 'GDPR Notice'
   export let description =
 //     'We use cookies to offer a better browsing experience, analyze site traffic, personalize content, and serve targeted advertisements. Please review our privacy policy & cookies information page. By clicking accept, you consent to our privacy policy & use of cookies.'
-       'Utililzamos cookies para ofrecer una mejor experiencia de navegación, analizar el tráfico, personalizar contenido, y mostrar anuncios optimizados. Por favor revise nuestra política de privacidad y la información sobre cookies. Al hacer click usted consiente y acepta nuestra política de privacidad y uso de cookies.
+       'Utililzamos cookies para ofrecer una mejor experiencia de navegación, analizar el tráfico, personalizar contenido, y mostrar anuncios optimizados. Por favor revise nuestra política de privacidad y la información sobre cookies. Al hacer click usted consiente y acepta nuestra política de privacidad y uso de cookies.'
   export let categories = {
     analytics: function () {},
     tracking: function () {},
