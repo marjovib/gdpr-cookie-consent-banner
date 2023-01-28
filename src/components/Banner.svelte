@@ -33,23 +33,27 @@
   const choicesDefaults = {
     necessary: {
       label: 'Necessary cookies',
-      description: "Used for cookie control. Can't be turned off.",
+//    description: "Used for cookie control. Can't be turned off.",
+      description: "Utilizada para el control de cookies. No puede ser desactivada",
       value: true
     },
     tracking: {
       label: 'Tracking cookies',
-      description: 'Used for advertising purposes.',
+//    description: 'Used for advertising purposes.',
+      description: 'Utilizada,para la realización de publicidades. ',
       value: true
     },
     analytics: {
       label: 'Analytics cookies',
       description:
-        'Used to control Google Analytics, a 3rd party tool offered by Google to track user behavior.',
+//         'Used to control Google Analytics, a 3rd party tool offered by Google to track user behavior.',
+           'Utilizada para el control de Google Analytics, una herramienta de terceros ofrecida por Google para el seguimiento del comportamiento del usuario.', 
       value: true
     },
     marketing: {
       label: 'Marketing cookies',
-      description: 'Used for marketing data.',
+//       description: 'Used for marketing data.',
+      description:'Utilizada para datos de marketing.',   
       value: true
     }
   }
@@ -74,11 +78,11 @@
     return result
   }, {})
 
-  export let acceptLabel = 'Accept cookies'
-  export let rejectLabel = 'Reject cookies'
-  export let settingsLabel = 'Cookie settings'
-  export let closeLabel = 'Close settings'
-  export let editLabel = 'Edit cookie settings'
+  export let acceptLabel = 'Aceptar cookies'
+  export let rejectLabel = 'Rechazar cookies'
+  export let settingsLabel = 'Configuración de Cookie'
+  export let closeLabel = 'Cerrar Configuración'
+  export let editLabel = 'Editar configuración de cookies'
 
   export function show () {
     shown = true
@@ -86,7 +90,7 @@
 
   onMount(() => {
     if (!cookieName) {
-      throw new Error('You must set gdpr cookie name')
+      throw new Error('Tiene que establecer el nombre de la cookie lopd')
     }
 
     const cookie = Cookies.get(cookieName)
@@ -99,7 +103,7 @@
       const valid = validate(cookieChoices, choices)
 
       if (!valid) {
-        throw new Error('cookie consent has changed')
+        throw new Error('El consentimiento de cookie ha cambiado')
       }
 
       execute(choices)
